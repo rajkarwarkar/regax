@@ -1,0 +1,76 @@
+
+{
+    "questions": [
+        {
+            "question": "Write a regex to match strings that are valid IPv4 addresses.",
+            "testCases": ["192.168.1.1", "255.255.255.255", "256.256.256.256", "123.456.78.90"],
+            "expected": [true, true, false, false]
+        },
+        {
+            "question": "Create a regex to find all hashtags in a given text (e.g., #example).",
+            "testCases": ["#love", "no hashtag", "#2020", "#LifeIsGood"],
+            "expected": [true, false, true, true]
+        },
+        {
+            "question": "Write a regex to validate dates in the format DD/MM/YYYY.",
+            "testCases": ["01/01/2020", "12/31/2020", "31/02/2020", "29/02/2021"],
+            "expected": [true, false, false, false]
+        },
+        {
+            "question": "Create a regex to find all words that end with 'ing' in a given text.",
+            "testCases": ["running", "walking", "jumped", "sing"],
+            "expected": [true, true, false, true]
+        },
+        {
+            "question": "Write a regex to validate US phone numbers (e.g., (123) 456-7890 or 123-456-7890).",
+            "testCases": ["(123) 456-7890", "123-456-7890", "1234567890", "123.456.7890"],
+            "expected": [true, true, false, false]
+        },
+        {
+            "question": "Create a regex to find all monetary amounts in a given text (e.g., $100.00 or €100).",
+            "testCases": ["$100.00", "€100", "100.00", "$100", "€100.50"],
+            "expected": [true, true, false, true, true]
+        },
+        {
+            "question": "Write a regex to match strings that are valid MAC addresses.",
+            "testCases": ["00:1B:44:11:3A:B7", "01-23-45-67-89-ab", "0123456789ab", "00:1G:44:11:3A:B7"],
+            "expected": [true, true, false, false]
+        },
+        {
+            "question": "Create a regex to find all words in a text that start and end with the same letter.",
+            "testCases": ["level", "deified", "radar", "hello", "world"],
+            "expected": [true, true, true, false, false]
+        },
+        {
+            "question": "Write a regex to validate strings that are valid passport numbers (e.g., A1234567).",
+            "testCases": ["A1234567", "B9876543", "1234567A", "A12345", "A12345678"],
+            "expected": [true, true, false, false, false]
+        },
+        {
+            "question": "Create a regex to find all quoted strings in a text (e.g., \"example\" or 'example').",
+            "testCases": ["\"hello\"", "'world'", "\"test'", "'test\"", "no quotes"],
+            "expected": [true, true, false, false, false]
+        },
+        {
+            "question": "Write a regex to match strings that are valid domain names.",
+            "testCases": ["example.com", "sub.example.com", "example", "example.", ".com"],
+            "expected": [true, true, false, false, false]
+        },
+        {
+            "question": "Create a regex to find all mentions in a text (e.g., @username).",
+            "testCases": ["@user1", "no mention", "@user_name", "@User123", "user@name"],
+            "expected": [true, false, true, true, false]
+        },
+        
+        {
+            "question": "Match all strings that contain only digits",
+            "testCases": ["12345", "abc123", "67890", "42"],
+            "expected": [true, false, true, true]
+        },
+        {
+            "question": "Match all strings that start with a capital letter",
+            "testCases": ["Hello", "world", "Python", "java"],
+            "expected": [true, false, true, false]
+        }
+    ]
+}
