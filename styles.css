@@ -40,7 +40,6 @@ body {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 30px;
-    color:white;
     font-size:15px;
 }
 
@@ -137,7 +136,6 @@ section .star.star8 { animation-delay: -7s; background-image: url('star8.png'); 
        margin-top: 10px;
        margin-bottom: 30px;
        margin-left: -10px;
-       color:white;
        font-size:20px;
     }
 }
