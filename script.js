@@ -49,6 +49,10 @@ function validateRegex() {
     if (allPass) {
         score++;
     }
+     // Clear the input field
+    document.getElementById("user-regex").value = '';
+
+    // Optionally, hide any result messages or feedback here if you have them
     
     currentQuestionIndex++;
     displayQuestion();
